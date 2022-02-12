@@ -1,0 +1,117 @@
+$font-color: #edf8f8;
+$tag-bg: #1a1b32;
+$change-tag: #2ec621;
+
+@mixin tag {
+  background: $tag-bg;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #edf8f880;
+  font-size: 1.5rem;
+  width: fit-content;
+}
+
+@mixin cardContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: #5d64f41a;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 545px;
+  padding: 25px;
+}
+
+@media screen and (min-width: 240px) {
+  div.container {
+    @include cardContainer();
+    div.card-1row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span.price-change {
+        background: $change-tag;
+        padding: 4px 9px;
+        border-radius: 5px;
+        color: $font-color;
+        font-size: 1.4rem;
+        width: fit-content;
+      }
+      div.info {
+        display: flex;
+        column-gap: 10px;
+        div.coin-info-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          div.coin-name-container {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            h3.card-title {
+              color: $font-color;
+              font-weight: 500;
+              font-size: 3rem;
+            }
+            span.coin-symbol {
+              @include tag();
+            }
+          }
+          span.rank {
+            @include tag();
+          }
+        }
+      }
+    }
+    div.card-2row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      p {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+      p.high-24 {
+        font-weight: 300;
+        color: $change-tag;
+      }
+      span.price-24h {
+          font-weight: 400;
+        color: $font-color;
+      }
+      p.low-24 {
+          font-weight: 300;
+        color: red;
+      }
+    }
+
+    div.card-3row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        p.market-info {
+            color: #edf8f87c;
+            font-weight: 300;
+            span.market-price {
+                color: $font-color;
+            }
+        }
+        h2.price {
+            color: $font-color;
+            font-size: 2.5rem;
+        }
+    }
+  }
+}
+
+@media screen and (min-width: 555px) {
+  div.card-container {
+    @include cardContainer();
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.card-container {
+    @include cardContainer();
+  }
+}

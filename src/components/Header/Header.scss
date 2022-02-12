@@ -1,0 +1,84 @@
+$font-color: #edf8f8;
+
+@mixin spanDate($spanMargin) {
+  display: flex;
+  align-items: center;
+  background: #5df49c26;
+  box-shadow: 0px 0px 30px #0000002a;
+  padding: 0px 20px;
+  height: 25px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: $font-color;
+  margin: $spanMargin;
+}
+
+@mixin headerInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 240px) {
+  header.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    div.header-info {
+        @include headerInfo();
+      .devam-svg {
+        height: 4.5rem;
+      }
+      span.date {
+        @include spanDate(0px);
+      }
+    }
+    .search-container {
+        margin-top: 20px;
+        max-width: 5140px;
+    }
+  }
+}
+
+@media screen and (min-width: 555px) {
+  header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    div.header-info {
+        @include headerInfo();
+      .devam-svg {
+        height: 4.5rem;
+      }
+      span.date {
+        @include spanDate(auto);
+      }
+    }
+    .search-container {
+        margin-top: 0;
+        max-width: 280px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    div.header-info {
+        @include headerInfo();
+      .devam-svg {
+        height: 4.5rem;
+      }
+      span.date {
+        @include spanDate(auto);
+      }
+    }
+  }
+}

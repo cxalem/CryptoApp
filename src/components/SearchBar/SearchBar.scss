@@ -1,0 +1,80 @@
+$font-color: #edf8f8;
+
+@mixin searchContainer($searchContainerHeight) {
+  display: flex;
+  height: $searchContainerHeight;
+  border-radius: 6px;
+  background: #5d64f426;
+  box-shadow: 0px 0px 30px #0000002a;
+  width: 100%;
+  max-width: 250px;
+}
+
+@mixin searchInput {
+  background: transparent;
+  border-width: 0px;
+  font-size: 1.3rem;
+  border-radius: 6px 0 0 6px;
+  width: 100%;
+  padding: 0px 20px;
+  color: $font-color;
+  &:focus {
+    outline: 0px;
+  }
+  &::placeholder {
+    color: #edf8f848;
+  }
+}
+
+@mixin searchBtn() {
+  background: #191641;
+  border-width: 0;
+  width: 50px;
+  border-radius: 0 6px 6px 0;
+  &:hover {
+    background: #2d2961;
+    transition: 0.2s ease-in-out;
+  }
+  .lupa-svg {
+    margin-top: 7px;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  div.search-container {
+    @include searchContainer(45px);
+
+    input.search-input {
+      @include searchInput();
+    }
+    button.search-btn {
+      @include searchBtn();
+    }
+  }
+}
+
+@media screen and (min-width: 555px) {
+  div.search-container {
+    @include searchContainer(40px);
+
+    input.search-input {
+      @include searchInput();
+    }
+    button.search-btn {
+      @include searchBtn();
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.search-container {
+    @include searchContainer(40px);
+    input.search-input {
+      @include searchInput();
+    }
+    button.search-btn {
+      @include searchBtn();
+    }
+  }
+}

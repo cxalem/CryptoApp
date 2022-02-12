@@ -1,0 +1,152 @@
+@media screen and (min-width: 240px) {
+  header.header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 20px;
+  }
+  header.header div.header-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header div.header-info .devam-svg {
+    height: 4.5rem;
+  }
+  header.header div.header-info span.date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #5df49c26;
+    -webkit-box-shadow: 0px 0px 30px #0000002a;
+            box-shadow: 0px 0px 30px #0000002a;
+    padding: 0px 20px;
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #edf8f8;
+    margin: 0px;
+  }
+  header.header .search-container {
+    margin-top: 20px;
+    max-width: 5140px;
+  }
+}
+
+@media screen and (min-width: 555px) {
+  header.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 60px;
+  }
+  header.header div.header-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header div.header-info .devam-svg {
+    height: 4.5rem;
+  }
+  header.header div.header-info span.date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #5df49c26;
+    -webkit-box-shadow: 0px 0px 30px #0000002a;
+            box-shadow: 0px 0px 30px #0000002a;
+    padding: 0px 20px;
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #edf8f8;
+    margin: auto;
+  }
+  header.header .search-container {
+    margin-top: 0;
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 60px;
+  }
+  header.header div.header-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.header div.header-info .devam-svg {
+    height: 4.5rem;
+  }
+  header.header div.header-info span.date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #5df49c26;
+    -webkit-box-shadow: 0px 0px 30px #0000002a;
+            box-shadow: 0px 0px 30px #0000002a;
+    padding: 0px 20px;
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #edf8f8;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

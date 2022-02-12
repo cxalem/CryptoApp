@@ -1,0 +1,170 @@
+@media screen and (min-width: 240px) {
+  div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    background: #5d64f41a;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 545px;
+    padding: 25px;
+  }
+  div.container div.card-1row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.container div.card-1row span.price-change {
+    background: #2ec621;
+    padding: 4px 9px;
+    border-radius: 5px;
+    color: #edf8f8;
+    font-size: 1.4rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  div.container div.card-1row div.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  div.container div.card-1row div.info div.coin-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.container div.card-1row div.info div.coin-info-container div.coin-name-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  div.container div.card-1row div.info div.coin-info-container div.coin-name-container h3.card-title {
+    color: #edf8f8;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  div.container div.card-1row div.info div.coin-info-container div.coin-name-container span.coin-symbol {
+    background: #1a1b32;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #edf8f880;
+    font-size: 1.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  div.container div.card-1row div.info div.coin-info-container span.rank {
+    background: #1a1b32;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #edf8f880;
+    font-size: 1.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  div.container div.card-2row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.container div.card-2row p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  div.container div.card-2row p.high-24 {
+    font-weight: 300;
+    color: #2ec621;
+  }
+  div.container div.card-2row span.price-24h {
+    font-weight: 400;
+    color: #edf8f8;
+  }
+  div.container div.card-2row p.low-24 {
+    font-weight: 300;
+    color: red;
+  }
+  div.container div.card-3row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  div.container div.card-3row p.market-info {
+    color: #edf8f87c;
+    font-weight: 300;
+  }
+  div.container div.card-3row p.market-info span.market-price {
+    color: #edf8f8;
+  }
+  div.container div.card-3row h2.price {
+    color: #edf8f8;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 555px) {
+  div.card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    background: #5d64f41a;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 545px;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    background: #5d64f41a;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 545px;
+    padding: 25px;
+  }
+}
+/*# sourceMappingURL=Card.css.map */
