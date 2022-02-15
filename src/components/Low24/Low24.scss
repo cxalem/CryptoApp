@@ -1,0 +1,14 @@
+$font-color: #edf8f8;
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  span.price-24h {
+      font-weight: 400;
+      color: $font-color;
+  }
+  p.low-24 {
+      font-weight: 300;
+    color: red;
+  }

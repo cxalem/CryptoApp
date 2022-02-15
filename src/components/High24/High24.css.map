@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGE,AAAA,CAAC,AAAA,QAAQ,CAAC;EACR,WAAW,EAAE,GAAG;EAChB,KAAK,EAJI,OAAO;CAKjB;;AACD,AAAA,IAAI,AAAA,UAAU,CAAC;EACX,WAAW,EAAE,GAAG;EAChB,KAAK,EATE,OAAO;CAUjB",
+    "sources": [
+        "High24.scss"
+    ],
+    "names": [],
+    "file": "High24.css"
+}

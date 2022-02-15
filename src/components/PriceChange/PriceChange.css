@@ -1,0 +1,22 @@
+span.price-change {
+  background: #2ec621;
+  padding: 4px 9px;
+  border-radius: 5px;
+  color: #edf8f8;
+  font-size: 1.4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+span.down-price {
+  background: red;
+  padding: 4px 9px;
+  border-radius: 5px;
+  color: #edf8f8;
+  font-size: 1.4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=PriceChange.css.map */

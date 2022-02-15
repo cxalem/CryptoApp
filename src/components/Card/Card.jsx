@@ -1,43 +1,46 @@
-import React from 'react'
-import { BtcSvg } from '../../SvgComponents/BtcSvg/BtcSvg'
-import './Card.css'
+import React from "react";
+import { CoinRank } from "../CoinRank/CoinRank";
+import { CoinSymbol } from "../CoinSymbol/CoinSymbol";
+import { PriceChange } from "../PriceChange/PriceChange";
+import { High24 } from "../High24/High24";
+import { Low24 } from "../Low24/Low24";
+import { MarketCap } from "../MarketCap/MarketCap";
+import { Ath } from "../Ath/Ath";
+import { Price } from "../Price/Price";
+import { CoinTitle } from "../CoinTitle/CoinTitle";
+import "./Card.css";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className='container'>
-
+    <div className="container">
       <div className="card-1row">
         <div className="info">
-          <BtcSvg width='55' height='55' />
+          <img className="coin-img" src={props.coinImg} alt="" />
           <div className="coin-info-container">
+            <CoinTitle coinName={props.coinName} />            
             <div className="coin-name-container">
-              <h3 className="card-title">Bitcoin</h3>
-              <span className='coin-symbol'>BTC</span>
+              <CoinSymbol coinSymbol={props.coinSymbol} />
+              <CoinRank coinRank={props.rank} />
             </div>
-            <span className='rank'>Rank #1</span>
           </div>
         </div>
-        <span className="price-change">▲51.5%</span>
+        <PriceChange priceChange={props.priceChange} />
       </div>
 
       <div className="card-2row">
-        <p className="high-24">
-          High 24h: <span className="price-24h">$46,153.09</span>
-        </p>
-        <p className="low-24">
-          Low 24h: <span className="price-24h">$43,153.09</span>
-        </p>
+        <High24 high24={props.high24} />
+        <Low24 low24={props.low24} />
       </div>
 
       <div className="card-3row">
         <div className="coin-data">
-          <p className="market-info">Market Cap: <span className="market-price">$831,601,198,495</span></p>
-          <p className="market-info">All Time High: <span className="market-price">$66,997.15</span></p>
+          <MarketCap marketCap={props.marketCap} />
+          <Ath ath={props.ath} />
         </div>
-        <h2 className="price">$43,874.07</h2>
+        <Price price={props.price} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export { Card }
+export { Card };

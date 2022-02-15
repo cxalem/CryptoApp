@@ -1,0 +1,11 @@
+$font-color: #edf8f8;
+$change-tag: #2ec621;
+
+  p.high-24 {
+    font-weight: 300;
+    color: $change-tag;
+  }
+  span.price-24h {
+      font-weight: 400;
+      color: $font-color;
+  }

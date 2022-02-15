@@ -1,0 +1,11 @@
+span.rank {
+  background: #1a1b32;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #edf8f880;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=CoinRank.css.map */

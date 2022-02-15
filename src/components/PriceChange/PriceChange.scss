@@ -1,0 +1,19 @@
+$font-color: #edf8f8;
+$change-tag: #2ec621;
+
+@mixin priceChangeTag($background) {
+  background: $background;
+  padding: 4px 9px;
+  border-radius: 5px;
+  color: $font-color;
+  font-size: 1.4rem;
+  width: fit-content;  
+}
+
+span.price-change {
+  @include priceChangeTag($change-tag);
+}
+
+span.down-price {
+  @include priceChangeTag(red);
+}

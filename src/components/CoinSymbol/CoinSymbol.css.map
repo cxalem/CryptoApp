@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,IAAI,AAAA,YAAY,CAAC;EARb,UAAU,EAHL,OAAO;EAIZ,OAAO,EAAE,OAAO;EAChB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,SAAS;EAChB,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,WAAW;CAKrB",
+    "sources": [
+        "CoinSymbol.scss"
+    ],
+    "names": [],
+    "file": "CoinSymbol.css"
+}

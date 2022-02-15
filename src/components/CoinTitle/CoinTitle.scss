@@ -1,0 +1,22 @@
+$font-color: #edf8f8;
+
+@mixin titleStyle($fontSize) {
+  h3.card-title {
+    position: relative;
+    color: $font-color;
+    font-weight: 500;
+    font-size: $fontSize;
+  }  
+}
+
+@media screen and (min-width: 240px) {
+  @include titleStyle(1.7rem);
+}
+
+@media screen and (min-width: 555px) {
+  @include titleStyle(1.9rem);
+}
+
+@media screen and (min-width: 1024px) {
+  @include titleStyle(1.9rem);
+}
