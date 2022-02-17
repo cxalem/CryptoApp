@@ -7,7 +7,7 @@ import UUID from "uuidjs";
 import { CryptoContext } from "./components/CryptoContext/CryptoContext";
 
 const AppUI = () => {
-  const { getData, formatPrice, coins } =
+  const { getData, formatPrice, serchedCoins } =
     React.useContext(CryptoContext);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const AppUI = () => {
       <Header />
       {
         <CardList>
-          {coins.map((coin) => {
+          {serchedCoins.map((coin) => {
             return (
               <LazyCard
                 key={UUID.generate()}

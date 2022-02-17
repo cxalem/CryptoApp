@@ -4,7 +4,6 @@ import { useState } from "react";
 const CryptoContext = React.createContext();
 
 const CryptoProvider = (props) => {
-
   //Coins State
   const [coins, setCoins] = useState([]);
 
@@ -24,12 +23,31 @@ const CryptoProvider = (props) => {
     }).format(price);
   };
 
+  //Searchbar
+  const [search, setSearch] = useState("");
+  const onSearchValue = (e) => {
+    setSearch(e.target.value);
+  };
+  let serchedCoins = [];
+  if (!search.length >= 1) {
+    serchedCoins = coins;
+  } else {
+    serchedCoins = coins.filter((coin) => {
+      const coinName = coin.name.toLowerCase();
+      const searchText = search.toLowerCase();
+      return coinName.includes(searchText);
+    });
+  }
+
   return (
     <CryptoContext.Provider
       value={{
         getData,
         formatPrice,
         coins,
+        search,
+        onSearchValue,
+        serchedCoins,
       }}
     >
       {props.children}
