@@ -11,11 +11,11 @@ const LazyCard = (props) => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const isShowing = entries[0]?.isIntersecting;
-      if (isShowing) {
-        toggleShown(true);
-      }
-      // setTimeout(()=>{
-      // }, 1000)
+      setTimeout(()=>{
+        if (isShowing) {
+          toggleShown(true);
+        }
+      }, 500)
     });
 
     observer.observe(trigger.current);
