@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=CardList.css.map */
+section.card-list {
+  width: 100%;
+}
+
+@media screen and (min-width: 240px) {
+  section.card-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  section.card-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    -webkit-column-gap: 34px;
+            column-gap: 34px;
+    margin-top: 5rem;
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1114px) {
+  section.card-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    -webkit-column-gap: 34px;
+            column-gap: 34px;
+    margin-top: 8rem;
+    padding: 0 60px;
+  }
+}
+/*# sourceMappingURL=CardList.css.map */

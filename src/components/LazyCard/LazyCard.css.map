@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,AAAA,QAAQ,CAAC;EACR,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "LazyCard.scss"
+    ],
+    "names": [],
+    "file": "LazyCard.css"
+}

@@ -10,6 +10,10 @@ $change-tag: #2ec621;
   max-height: 240px;
   max-width: 545px;
   padding: 25px;
+  &:hover {
+    background: #5deff41a;
+    transition: ease-in-out .3s;
+  }
 }
 
 @mixin tabletDesktop {

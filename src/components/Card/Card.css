@@ -11,6 +11,11 @@
     max-width: 545px;
     padding: 25px;
   }
+  div.container:hover {
+    background: #5deff41a;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+  }
   div.container div.card-1row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -96,6 +101,11 @@
     max-width: 545px;
     padding: 25px;
   }
+  div.container:hover {
+    background: #5deff41a;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+  }
   div.container div.card-1row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -180,6 +190,11 @@
     max-height: 240px;
     max-width: 545px;
     padding: 25px;
+  }
+  div.container:hover {
+    background: #5deff41a;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
   }
   div.container div.card-1row {
     display: -webkit-box;

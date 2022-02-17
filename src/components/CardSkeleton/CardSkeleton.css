@@ -1,0 +1,93 @@
+div.skeletonCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #a5a5a5;
+  border-radius: 15px;
+  width: 100%;
+  height: 170px;
+  width: 100%;
+  padding: 25px;
+  opacity: 30%;
+  background-image: linear-gradient(90deg, #a5a5a5 0px, #cacaca 80px, #a5a5a5 80px);
+  background-size: 580px;
+  -webkit-animation: shine 1.5s infinite linear;
+          animation: shine 1.5s infinite linear;
+}
+
+div.skeletonCard div.skeleton-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.skeletonCard div.skeleton-container div.skeleton-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+}
+
+div.skeletonCard div.skeleton-container div.skeleton-text {
+  height: 15px;
+  width: 100px;
+  background: #ffffff;
+}
+
+div.skeletonCard div.skeleton-price {
+  height: 15px;
+  width: 110px;
+  background: #ffffff;
+  text-align: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (min-width: 1114px) {
+  div.skeleton {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    -webkit-column-gap: 34px;
+            column-gap: 34px;
+    margin-top: 6rem;
+    padding: 0 60px;
+  }
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: -290px;
+  }
+  100% {
+    background-position: 290px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -290px;
+  }
+  100% {
+    background-position: 290px;
+  }
+}
+/*# sourceMappingURL=CardSkeleton.css.map */
