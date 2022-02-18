@@ -5,7 +5,7 @@ which gives me all the information about the cryptos that are in their database.
 
 I used Vite, ReactJS and the CSS preprocessor: SASS.
 
-It took me 6 days to finish it. I usually design the app in Figma and then start working on the code.
+It took me 5 days to finish it. I usually design the app in Figma and then start working on the code.
 
 Deployed App: https://cxalem.github.io/CryptoApp/
 
